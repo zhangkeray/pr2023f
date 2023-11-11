@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- D3, jquery -->
+<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" charset="utf-8"></script>
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<title>作品集 Portfolio</title>
+<style type="text/css">
+body {
+  background-color: rgb(159, 53, 58);
+  color: rgb(159, 53, 58);
+}
+
+.container-fluid {
+  width:  90%;
+}
+
+.hw12 {
+  border: 1px solid rgb(159, 53, 58);
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.twenty {
+  border: 1px solid #f9eced;
+  color: #f9eced;
+  padding: 8px;
+  font-size: 18pt;
+}
+
+.twenty a {
+  color:  yellow;
+}
+
+.twenty a:hover {
+  color: #f9eced;
+  font-size:  24pt;
+}
+
+.thirty {
+  border: 1px solid #f9eced;
+  color: #f9eced;
+}
+
+.ninety {
+  border: 1px solid rgb(159, 53, 58);
+  background-color: #f9eced;
+  padding: 8px;
+}
+
+
+
+svg {
+  border: 2px solid rgb(159, 53, 58);
+}
+
+path {
+  pointer-events: all;
+  fill: #f9eced;
+  stroke: rgb(159, 53, 58);
+  stroke-opacity: 0.95;
+  stroke-width: 1px;
+}
+
+.active circle {
+  stroke: #f9eced;
+  stroke-width: 2px;
+}
+
+svg g text {
+  fill: rgba(255, 255, 255, 0.95);
+  background-color: rgba(255, 255, 0, 0.1);
+  text-shadow: 0 0 16px #FF0000, 0 0 16px #000000;
+  font-size: 24pt;
+  text-anchor: middle;
+}
+
+.twenty:hover {
+  /*
+    background-color: rgba(255, 255, 0, 0.1);
+  */
+    box-shadow: 0 0 5px 3px #f9eced;
+    color: yellow; 
+    text-shadow: 0 0 6px #FFFFFF, 0 0 6px #000000;
+}
+
+img:hover {
+    box-shadow: 0 0 1px 1px #f9eced;
+    animation-name: happy;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes happy {
+    0% {
+        transform: translateY(0px);
+    }
+    25% {
+        transform: translateY(-15px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    75% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+.v {
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/text-orientation */
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-size: 24pt;
+  font-family:'MyFont';
+  line-height: 2;
+}
+@font-face {
+  font-family:'MyFont';
+  src: url(BpmfZihiKaiStd-Regular.ttf);
+}
+</style>
+</head>
+<body>
+
+<div class="container-fluid">
+  <!-- ---------------------------------------------- -->
+  <div class="row hw12">
+    <div class="col-md-8 twenty">
+      <h1>圖形識別 112-1 作品集 Portfolio</h1>
+    </div>
+    <div class="col twenty"><a href="../hw00/index.html">00</a></div>
+    <div class="col twenty"><a href="../hw01/index.html">01</a></div>
+    <div class="col twenty"><a href="../hw02/index.html">02</a></div>
+    <div class="col twenty"><a href="../hw03/index.html">03</a></div>
+  </div>
+
+  <!-- ------------------------------------------------>
+  <div class="row hw12">
+    <div class="col-md-12 twenty">
+      <h1>作業 01</h1>
+    </div>
+  </div>
+
+  <!-- ------------------------------------------------>
+  <div class="row hw12">
+    <div class="col-md-12 twenty">
+      心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。
+    </div>
+  </div>
+
+
+  <!-- ------------------------------------------------>
+  <div class="row hw12">
+    <div class="col-md-12 twenty">
+      These fonts are licensed under the Open Font License.
+    </div>
+  </div>
+
+  <!-- ------------------------------------------------>
+  <div class="row hw12">
+    <div class="col-md-12 twenty v">
+      <h1>《長恨歌》 白居易</h1>
+      <p>
+      漢皇重色思傾國，御宇多年求不得。<br>楊家有女初長成，養在深閨人未識。<br>
+      天生麗質難自棄，一朝選在君王側。<br>回眸一笑百媚生，六宮粉黛無顏色。<br>
+      春寒賜浴華清池，溫泉水滑洗凝脂。<br>侍兒扶起嬌無力，始是新承恩澤時。<br>
+      雲鬢花顏金步搖，芙蓉帳暖度春宵。<br>春宵苦短日高起，從此君王不早朝。<br>
+      承歡侍宴無閒暇，春從春遊夜專夜。<br>後宮佳麗三千人，三千寵愛在一身。<br>
+      金屋妝成嬌侍夜，玉樓宴罷醉和春。<br>姊妹弟兄皆列土，可憐光彩生門戶。<br>
+      遂令天下父母心，不重生男重生女。<br>驪宮高處入青雲，仙樂風飄處處聞。<br>
+      緩歌慢舞凝絲竹，盡日君王看不足。<br>漁陽鼙鼓動地來，驚破霓裳羽衣曲。<br>
+      </p>
+    </div>
+  </div>
+  
+  <!-- ------------------------------------------------>
+  <div class="row hw12">
+    <div class="col-md-12 twenty v">
+      <p>
+      九重城闕煙塵生，千乘萬騎西南行。<br>翠華搖搖行復止，西出都門百餘里。<br>
+      六軍不發無奈何，宛轉蛾眉馬前死。<br>花鈿委地無人收，翠翹金雀玉搔頭。<br>
+      君王掩面救不得，回看血淚相和流。<br>黃埃散漫風蕭索，雲棧縈紆登劍閣。<br>
+      峨嵋山下少人行，旌旗無光日色薄。<br>蜀江水碧蜀山青，聖主朝朝暮暮情。<br>
+      行宮見月傷心色，夜雨聞鈴腸斷聲。<br>
+      </p>
+    </div>
+  </div>
+  
+  <!-- ------------------------------------------------>
+  <div class="row hw12">
+    <div class="col-md-12 twenty v">
+      <p>
+      天旋地轉迴龍馭，到此躊躇不能去。<br>馬嵬坡下泥土中，不見玉顏空死處。<br>
+      君臣相顧盡霑衣，東望都門信馬歸。<br>歸來池苑皆依舊，太液芙蓉未央柳。<br>
+      芙蓉如面柳如眉，對此如何不淚垂。<br>春風桃李花開日，秋雨梧桐葉落時。<br>
+      西宮南內多秋草，落葉滿階紅不掃。<br>梨園弟子白髮新，椒房阿監青娥老。<br>
+      夕殿螢飛思悄然，孤燈挑盡未成眠。<br>遲遲鐘鼓初長夜，耿耿星河欲曙天。<br>
+      鴛鴦瓦冷霜華重，翡翠衾寒誰與共。<br>悠悠生死別經年，魂魄不曾來入夢。<br>
+    </p>
+    </div>
+  </div>
+  
+  <!-- ------------------------------------------------>
+  <div class="row hw12">
+    <div class="col-md-12 twenty v">
+    <p>
+      臨邛道士鴻都客，能以精誠致魂魄。<br>為感君王輾轉思，遂教方士殷勤覓。<br>
+      排空馭氣奔如電，昇天入地求之遍。<br>上窮碧落下黃泉，兩處茫茫皆不見。<br>
+      忽聞海上有仙山，山在虛無縹緲間。<br>樓閣玲瓏五雲起，其中綽約多仙子。<br>
+      中有一人字太真，雪膚花貌參差是。<br>金闕西廂叩玉扃，轉教小玉報雙成。<br>
+      聞道漢家天子使，九華帳裏夢魂驚。<br>攬衣推枕起徘徊，珠箔銀屏迤邐開。<br>
+      雲鬢半偏新睡覺，花冠不整下堂來。<br>風吹仙袂飄颻舉，猶似霓裳羽衣舞。<br>
+    </p>
+    </div>
+  </div>
+  
+  <!-- ------------------------------------------------>
+  <div class="row hw12">
+    <div class="col-md-12 twenty v">
+    <p>
+      玉容寂寞淚闌干，梨花一枝春帶雨。<br>含情凝睇謝君王，一別音容兩渺茫。<br>
+      昭陽殿裏恩愛絕，蓬萊宮中日月長。<br>回頭下望人寰處，不見長安見塵霧。<br>
+      惟將舊物表深情，鈿合金釵寄將去。<br>釵留一股合一扇，釵擘黃金合分鈿。<br>
+      但教心似金鈿堅，天上人間會相見。<br>臨別殷勤重寄詞，詞中有誓兩心知。<br>
+      七月七日長生殿，夜半無人私語時。<br>在天願作比翼鳥，在地願為連理枝。<br>
+      天長地久有時盡，此恨綿綿無絕期。<br>
+      </p>
+    </div>
+  </div>
+
+  <!-- ------------------------------------------------>
+
+  <!-- ------------------------------------------------>
+  <div class="row hw12">
+    <div class="col-md-12 twenty v">
+      <h1>《琵琶行》 白居易</h1>
+      <p>
+        潯陽江頭夜送客，楓葉荻花秋瑟瑟。<br>
+        主人下馬客在船，舉酒欲飲無管絃。<br>
+        醉不成歡慘將別，別時茫茫江浸月。<br>
+        忽聞水上琵琶聲，主人忘歸客不發。<br>
+        尋聲闇問彈者誰，琵琶聲停欲語遲。<br>
+        移船相近邀相見，添酒回燈重開宴。<br><br>
+        千呼萬喚始出來，猶抱琵琶半遮面。<br><br>
+      </p>
+    </div>
+  </div>
+  
+  <!-- ------------------------------------------------>
+  <div class="row hw12">
+    <div class="col-md-12 twenty v">
+      <p>
+        轉軸撥絃三兩聲，未成曲調先有情。<br>
+        絃絃掩抑聲聲思，似訴平生不得志。<br>
+        低眉信手續續彈，說盡心中無限事。<br><br>
+        輕攏慢撚抹復挑，初為霓裳後六么。<br>
+        大絃嘈嘈如急雨，小絃切切如私語。<br>
+        嘈嘈切切錯雜彈，大珠小珠落玉盤。<br><br>
+        間關鶯語花底滑，幽咽泉流水下灘。<br>
+        水泉冷澀絃凝絕，凝絕不通聲暫歇。<br>
+        別有幽愁暗恨生，此時無聲勝有聲。<br><br>
+        銀瓶乍破水漿迸，鐵騎突出刀槍鳴。<br>
+        曲終收撥當心畫，四絃一聲如裂帛。<br>
+        東船西舫悄無言，唯見江心秋月白。<br>
+      </div>
+    </div>
+    
+    <!-- ------------------------------------------------>
+    <div class="row hw12">
+      <div class="col-md-12 twenty v">
+        <p>    
+        沉吟放撥插絃中，整頓衣裳起斂容。<br>
+        自言本是京城女，家在蝦蟆陵下住。<br>
+        十三學得琵琶成，名屬教坊第一部。<br>
+        曲罷曾教善才服，妝成每被秋娘妒。<br><br>
+        五陵年少爭纏頭，一曲紅綃不知數。<br>
+        鈿頭銀篦擊節碎，血色羅裙翻酒污。<br>
+        今年歡笑復明年，秋月春風等閒度。<br>
+        弟走從軍阿姨死，暮去朝來顏色故。<br><br>
+        門前冷落車馬稀，老大嫁作商人婦。<br>
+        商人重利輕別離，前月浮梁買茶去。<br>
+        去來江口守空船，繞船月明江水寒。<br>
+        夜深忽夢少年事，夢啼紅妝淚闌干。<br>
+      </p>
+    </div>
+  </div>
+  
+  <!-- ------------------------------------------------>
+  <div class="row hw12">
+    <div class="col-md-12 twenty v">
+      <p>
+        我聞琵琶已歎息，又聞此語重唧唧。<br>
+        同是天涯淪落人，相逢何必曾相識。<br>
+        我從去年辭帝京，謫居臥病潯陽城。<br>
+        潯陽地僻無音樂，終歲不聞絲竹聲。<br><br>
+        住近湓江地低溼，黃蘆苦竹繞宅生。<br>
+        其間旦暮聞何物，杜鵑啼血猿哀鳴。<br>
+        春江花朝秋月夜，往往取酒還獨傾。<br>
+        豈無山歌與村笛，嘔啞嘲哳難為聽。<br><br>
+        今夜聞君琵琶語，如聽仙樂耳暫明。<br>
+        莫辭更坐彈一曲，為君翻作琵琶行。<br><br>
+        感我此言良久立，卻坐促絃絃轉急。<br>
+        淒淒不似向前聲，滿座重聞皆掩泣。<br>
+        座中泣下誰最多？江州司馬青衫濕。<br>
+      </p>
+    </div>
+  </div>
+
+  <!-- ------------------------------------------------>
+  <div class="row hw12">
+    <div class="col-md-12 twenty v">
+      <h1>《洛神賦》 曹植</h1>
+      <p>
+        黃初三年 余朝京師 還濟洛川古人有言<br>
+        斯水之神 名曰宓妃感宋玉對楚王神女之事<br>
+        遂作斯賦其辭曰余從京域<br>
+        言歸東藩背伊闕 越轘轅 經通谷<br>
+        陵景山日既西傾 車殆馬煩爾迺稅駕乎蘅皋<br>
+        秣駟乎芝田容與乎陽林<br>流眄乎洛川於是<br>
+        精移神駭 忽焉思散俯則未察<br>
+        仰以殊觀覩一麗人<br>
+        于巖之畔迺援御者而告之曰爾有覿於彼者乎<br>
+        彼何人斯 若此之豔也御者對曰臣聞河洛之神<br>
+        名曰宓妃然則君王所見<br>
+        無迺是乎 其狀若何 臣願聞之<br>
+      </p>
+    </div>
+  </div>
+
+  <!-- ------------------------------------------------>
+  <div class="row hw12">
+    <div class="col-md-12 twenty v">
+      <p>
+        余告之曰 其形也 <br>
+        翩若驚鴻 婉若游龍<br>
+        榮曜秋菊 華茂春松<br>
+        髣髴兮若輕雲之蔽月<br>
+        飄颻兮若流風之迴雪<br><br>
+        遠而望之 皎若太陽升朝霞<br>
+        迫而察之 灼若芙蕖出淥波<br><br>
+        
+        襛纖得衷 脩短合度<br>
+        肩若削成 腰如約素<br><br>
+        延頸秀項 皓質呈露<br>
+        芳澤無加 鉛華弗御<br>
+        雲髻峨峨 脩眉聯娟<br>
+        丹脣外朗 皓齒內鮮<br><br>
+        明眸善睞 靨輔承權<br>
+        瑰姿豔逸 儀靜體閑<br>
+        柔情綽態 媚於語言<br>
+      </p>
+  </div>
+</div>
+
+<!-- ------------------------------------------------>
+<div class="row hw12">
+  <div class="col-md-12 twenty v">
+    <p>
+        奇服曠世 骨像應圖<br>
+        披羅衣之璀粲兮<br> 珥瑤碧之華琚<br><br>
+        戴金翠之首飾<br> 綴明珠以耀軀<br>
+        踐遠遊之文履<br> 曳霧綃之輕裾<br><br>
+        微幽蘭之芳藹兮<br> 步踟躕於山隅<br>
+      </p>
+  </div>
+</div>
+
+<!-- ------------------------------------------------>
+<div class="row hw12">
+  <div class="col-md-12 twenty v">
+    <p>
+        於是<br>忽焉縱體<br>以遨以嬉左倚采旄<br>右蔭桂旗攘皓腕於神滸兮<br>采湍瀨之玄芝余情悅其淑美兮<br>心振蕩而不怡無良媒以接懽兮<br>託微波而通辭願誠素之先達兮<br>解玉佩以要之嗟佳人之信脩兮<br>羌習禮而明詩抗瓊珶以和予兮<br>指潛淵而爲期執眷眷之款實兮<br>懼斯靈之我欺感交甫之棄言兮<br>悵猶豫而狐疑收和顏而靜志兮<br>申禮防以自持
+      </p>
+  </div>
+</div>
+    
+<!-- ------------------------------------------------>
+<div class="row hw12">
+  <div class="col-md-12 twenty v">
+    <p>
+    
+        於是<br>洛靈感焉<br>徙倚彷徨神光離合<br>乍陰乍陽竦輕軀以鶴立<br>若將飛而未翔踐椒涂之郁烈<br>步蘅薄而流芳超長吟以永慕兮<br>聲哀厲而彌長爾迺衆靈雜遝<br>命儔嘯侶或戲清流<br>或翔神渚或采明珠<br>或拾翠羽從南湘之二妃<br>攜漢濱之游女歎匏瓜之無匹兮<br>詠牽牛之獨處揚輕袿之猗靡兮<br>翳脩袖以延佇體迅飛鳧<br>飄忽若神凌波微步<br>羅襪生塵動無常則<br>若危若安進止難期<br>若往若還轉眄流精<br>光潤玉顏含辭未吐<br>氣若幽蘭華容婀娜<br>令我忘餐<br>
+      </p>
+  </div>
+</div>
+
+<!-- ------------------------------------------------>
+<div class="row hw12">
+  <div class="col-md-12 twenty v">
+    <p>
+        於是<br>屏翳收風<br>川后靜波<br>馮夷鳴鼓<br>女媧清歌騰文魚以警乘<br>鳴玉鸞以偕逝六龍儼其齊首<br>載雲車之容裔鯨鯢踴而夾轂<br>水禽翔而爲衛於是<br>越北沚<br>過南岡<br>紆素領<br>迴清陽動朱唇以徐言<br>陳交接之大綱恨人神之道殊兮<br>怨盛年之莫當抗羅袂以掩涕兮<br>淚流襟之浪浪悼良會之永絕兮<br>哀一逝而異鄉無微情以效愛兮<br>獻江南之明璫雖潛處於太陰<br>長寄心於君王忽不悟其所舍<br>悵神宵而蔽光於是<br>
+      </p>
+  </div>
+</div>
+
+<!-- ------------------------------------------------>
+<div class="row hw12">
+  <div class="col-md-12 twenty v">
+    <p>
+        背下陵高<br>足往神留<br>遺情想像<br>
+        顧望懷愁冀靈體之復形<br>御輕舟而上溯浮長川而忘反<br>思綿綿而增慕夜耿耿而不寐<br>霑繁霜而至曙命僕夫而就駕<br>吾將歸乎東路攬騑轡以抗策<br>悵盤桓而不能去
+    </p>
+</div>
+</div>
+ 
+<!-- ------------------------------------------------>
+<div class="row hw12">
+  <div class="col-md-12 twenty v">
+    <h1>《思源宋體》</h1>
+    <p>
+        <a href="https://source.typekit.com/source-han-serif/tw/">思源宋體</a> <br>
+        <a href="https://zh.wikipedia.org/zh-tw/%E6%80%9D%E6%BA%90%E5%AE%8B%E4%BD%93">思源宋體 - 維基百科</a><br>
+        <a href="https://fonts.google.com/noto/specimen/Noto+Sans+JP">Noto Sans Japanese</a> <br>
+
+        These fonts are licensed under the Open Font License. <br><br>
+
+        <a href="https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL">
+        SIL Open Font License (OFL)
+        </a><br>
+
+        <a href="https://zh.wikipedia.org/zh-tw/%E4%B8%96%E7%95%8C%E5%B0%91%E6%95%B0%E6%B0%91%E6%97%8F%E8%AF%AD%E6%96%87%E7%A0%94%E7%A9%B6%E9%99%A2"> SIL </a> <br><br>
+
+        世界少數民族語文研究院（SIL International）是一個國際性、非牟利、宗教性的科學組織，主要在研習、開發及記錄一些比較鮮為人知的語言，藉以擴展語言學知識、推動世界識字率及扶助少數族裔的語文發展。 <br><br> SIL 是英語 Summer Institute of Linguistics 的簡寫，意即「暑期語言學院」
+        
+    </p>
+  </div>
+</div>
+
+
+  <!-- ------------------------------------------------>
+</body>
+</html>
